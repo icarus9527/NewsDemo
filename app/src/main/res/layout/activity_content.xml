@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/contentToolBar"
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/toolBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:maxLines="1"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt"
+            android:hint="评论"
+            android:gravity="center"
+            android:background="#ccc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnCommit"
+            android:src="@drawable/check_alt_32x32"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:id="@+id/btnCollect"
+            android:src="@drawable/star_32x32"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageButton
+            android:src="@drawable/share_32x32"
+            android:id="@+id/btnShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

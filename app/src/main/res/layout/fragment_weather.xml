@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.daimajia.swipe.SwipeLayout
+    android:id="@+id/swipelayout_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    //头部
+    <LinearLayout
+        android:id="@+id/swipelayout_header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:text="暂无数据"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    //Bottom底部界面
+    <LinearLayout
+        android:id="@+id/swipelayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_weather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    //surface界面
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_centerVertical="true"
+                android:text="所在地:广州"
+                android:textColor="#fff"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#fff"
+                android:text="更新时间:刚刚"
+                android:id="@+id/sk_time"
+                android:layout_marginRight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_sk"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/cloudy1"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <TextView
+                android:id="@+id/sk_temp"
+                android:text=" 30°"
+                android:textSize="70dp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="90dp" />
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="风向"
+                    android:textColor="#eee"
+                    android:id="@+id/sk_wind_direction"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:text="风力"
+                    android:textColor="#eee"
+                    android:id="@+id/sk_strength"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:text="湿度"
+                    android:textColor="#eee"
+                    android:id="@+id/sk_humidity"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="更多详情"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/more_weather"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>

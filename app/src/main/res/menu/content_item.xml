@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:title="登录"
+        android:id="@+id/btnLogin"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="设置"
+        android:id="@+id/btnSet"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:background="#aa11aaff"
+    android:scaleType="centerCrop">
+
+        <EditText
+            android:id="@+id/edt_weather_city"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:textColorHint="#fff"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:hint="输入城市"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/btn_weather_query"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="点击查询"
+            android:layout_below="@+id/edt_weather_city"
+            android:layout_centerHorizontal="true" />
+
+</LinearLayout>

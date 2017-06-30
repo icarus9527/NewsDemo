@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/guide_viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="2000">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/cimutongzi"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/xuenv"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/qingxingdeng"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/yaoqinshi"/>
+
+            <TextView
+                android:id="@+id/txtStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始使用"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                />
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

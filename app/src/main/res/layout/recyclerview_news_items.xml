@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/imgHead"
+        android:layout_marginLeft="5dp"
+        android:layout_width="100dp"
+        android:layout_centerVertical="true"
+        android:layout_height="70dp"
+        android:background="#ccc"/>
+
+    <TextView
+        android:background="#fff"
+        android:id="@+id/tvTitle"
+        android:layout_alignTop="@id/imgHead"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/imgHead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgHead"
+        android:layout_alignLeft="@id/tvTitle"
+        android:text="来源laiyuan laiyuan laiyuian  adsasd"
+        android:maxLength="12"
+        android:textColor="#666"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgHead"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="时间"
+        android:textColor="#666"
+        android:textSize="12sp"/>
+
+</RelativeLayout>
